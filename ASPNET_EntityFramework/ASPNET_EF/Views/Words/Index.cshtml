@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ASPNET_EF.Models.Dictionaries>
+
+@{
+	ViewData["Title"] = "Index";
+	int i = 0;
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        @if (i % 3 == 0)
+        {
+            @:<div class='card-group mb-4 row'>
+        }
+
+        <div class="col-md-4">
+            <div class="card mx-auto " style="width: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title">@item.DictionaryName</h5>
+                    <p class="card-text">
+                        Poziom: @item.DictionaryLevelValues.DictionaryLevel <br />Ilość słów: @item.Words.Count
+                    </p>
+                    <p class="card-text">
+                    </p>
+                    <a asp-action="EditDictionary" asp-route-id="@item.Id" class="btn btn-primary">Wybierz</a>
+                </div>
+            </div>
+        </div>
+
+        @if ((i + 1) % 3 == 0)
+        {
+            @:</div>
+        }
+
+        i++;
+    }
+
+    @if (i % 3 != 0)
+    {
+        @:</div>
+    }
+</div>

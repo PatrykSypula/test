@@ -1,0 +1,111 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\patry\\source\\repos\\PatrykSypula\\test\\ASPNET_EntityFramework\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AF5FF53-8A2A-423B-BCC7-7C157F720D91}|ASPNET_EF\\ASPNET_EF.csproj|c:\\users\\patry\\source\\repos\\patryksypula\\test\\aspnet_entityframework\\aspnet_ef\\data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AF5FF53-8A2A-423B-BCC7-7C157F720D91}|ASPNET_EF\\ASPNET_EF.csproj|solutionrelative:aspnet_ef\\data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AF5FF53-8A2A-423B-BCC7-7C157F720D91}|ASPNET_EF\\ASPNET_EF.csproj|c:\\users\\patry\\source\\repos\\patryksypula\\test\\aspnet_entityframework\\aspnet_ef\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AF5FF53-8A2A-423B-BCC7-7C157F720D91}|ASPNET_EF\\ASPNET_EF.csproj|solutionrelative:aspnet_ef\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AF5FF53-8A2A-423B-BCC7-7C157F720D91}|ASPNET_EF\\ASPNET_EF.csproj|c:\\users\\patry\\source\\repos\\patryksypula\\test\\aspnet_entityframework\\aspnet_ef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AF5FF53-8A2A-423B-BCC7-7C157F720D91}|ASPNET_EF\\ASPNET_EF.csproj|solutionrelative:aspnet_ef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\patry\\source\\repos\\PatrykSypula\\test\\ASPNET_EntityFramework\\ASPNET_EF\\Data\\ApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "ASPNET_EF\\Data\\ApplicationDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\patry\\source\\repos\\PatrykSypula\\test\\ASPNET_EntityFramework\\ASPNET_EF\\Data\\ApplicationDbContextFactory.cs",
+              "RelativeToolTip": "ASPNET_EF\\Data\\ApplicationDbContextFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T15:22:07.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\patry\\source\\repos\\PatrykSypula\\test\\ASPNET_EntityFramework\\ASPNET_EF\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ASPNET_EF\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\patry\\source\\repos\\PatrykSypula\\test\\ASPNET_EntityFramework\\ASPNET_EF\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ASPNET_EF\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T14:50:09.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\patry\\source\\repos\\PatrykSypula\\test\\ASPNET_EntityFramework\\ASPNET_EF\\Program.cs",
+              "RelativeDocumentMoniker": "ASPNET_EF\\Program.cs",
+              "ToolTip": "C:\\Users\\patry\\source\\repos\\PatrykSypula\\test\\ASPNET_EntityFramework\\ASPNET_EF\\Program.cs",
+              "RelativeToolTip": "ASPNET_EF\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T14:45:51.984Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1152,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+﻿@model List<ASPNET_EF.Models.Words>
+
+@{
+    ViewData["Title"] = "Test";
+    var randomWord = ViewBag.RandomWord as ASPNET_EF.Models.Words;
+    var goodAnswers = ViewBag.GoodAnswers;
+    var allAnswers = ViewBag.AllAnswers;
+    var id = ViewBag.Id;
+}
+
+<h1>Words List</h1>
+
+<div>
+    <h4>Random Word</h4>
+    <hr />
+    @if (randomWord != null)
+    {
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => randomWord.WordPolish)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => randomWord.WordPolish)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => randomWord.WordTranslated)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => randomWord.WordTranslated)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => randomWord.Dictionary)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => randomWord.Dictionary.Id)
+            </dd>
+        </dl>
+    }
+</div>
+
+<div>
+    <h4>All Words</h4>
+    <hr />
+    <form asp-action="Study" method="post">
+        <button type="submit" name="action" class="btn btn-primary" value="SendWithoutChanges">I dont know answer</button>
+        <button type="submit" name="action" class="btn btn-warning" value="RemoveRandomWord">I know answer</button>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model[i].WordPolish)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model[i].WordPolish)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model[i].WordTranslated)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model[i].WordTranslated)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model[i].Dictionary)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model[i].Dictionary.Id)
+                </dd>
+
+                <!-- Ukryte pola do przesyłania danych z powrotem do kontrolera -->
+                <input type="hidden" name="[@i].Id" value="@Model[i].Id" />
+                <input type="hidden" name="[@i].WordPolish" value="@Model[i].WordPolish" />
+                <input type="hidden" name="[@i].WordTranslated" value="@Model[i].WordTranslated" />
+                <input type="hidden" name="[@i].DictionaryId" value="@Model[i].DictionaryId" />
+            </dl>
+        }
+        @if (randomWord != null)
+        {
+            <input type="hidden" name="randomWordId" value="@randomWord.Id" />
+        }
+        <input type="hidden" name="goodAnswers" value="@goodAnswers" />
+        <input type="hidden" name="id" value="@id" />
+        <input type="hidden" name="allAnswers" value="@allAnswers" />
+        
+    </form>
+</div>

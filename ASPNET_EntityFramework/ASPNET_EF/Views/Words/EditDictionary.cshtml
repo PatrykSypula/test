@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ASPNET_EF.Models.Words>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.WordPolish)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WordTranslated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dictionary)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WordPolish)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WordTranslated)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dictionary.Id)
+                </td>
+                <td>
+                    <a asp-action="EditWord" asp-route-id="@item.Id">Edytuj</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
